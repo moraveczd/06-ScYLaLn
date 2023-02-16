@@ -1,13 +1,11 @@
-\documentclass[hyperref=unicode, presentation,10pt]{beamer}
+\documentclass[hyperref=unicode,presentation,10pt]{beamer}
 
 \usepackage[absolute,overlay]{textpos}
 \usepackage{array}
 \usepackage{graphicx}
 \usepackage{adjustbox}
-\usepackage{mhchem}
+\usepackage[version=4]{mhchem}
 \usepackage{chemfig}
-\usepackage{ucs}
-\usepackage[utf8]{inputenc}
 \usepackage{caption}
 
 %dělení slov
@@ -15,16 +13,14 @@
 \let\raggedright=\RaggedRight
 %konec dělení slov
 
-\PrerenderUnicode{ěščřžýáíéĚŠČŘŽÝÁÍÉďťňĎŤŇůúÚóÓ}
-
 \addtobeamertemplate{frametitle}{
-   \let\insertframetitle\insertsectionhead}{}
+	\let\insertframetitle\insertsectionhead}{}
 \addtobeamertemplate{frametitle}{
-   \let\insertframesubtitle\insertsubsectionhead}{}
+	\let\insertframesubtitle\insertsubsectionhead}{}
 
 \makeatletter
-  \CheckCommand*\beamer@checkframetitle{\@ifnextchar\bgroup\beamer@inlineframetitle{}}
-  \renewcommand*\beamer@checkframetitle{\global\let\beamer@frametitle\relax\@ifnextchar\bgroup\beamer@inlineframetitle{}}
+\CheckCommand*\beamer@checkframetitle{\@ifnextchar\bgroup\beamer@inlineframetitle{}}
+\renewcommand*\beamer@checkframetitle{\global\let\beamer@frametitle\relax\@ifnextchar\bgroup\beamer@inlineframetitle{}}
 \makeatother
 \setbeamercolor{section in toc}{fg=red}
 \setbeamertemplate{section in toc shaded}[default][100]
@@ -38,17 +34,18 @@
 \def\uv#1{„#1“}
 
 \mode<presentation>{\usetheme{default}}
- \usecolortheme{crane}
+\usecolortheme{crane}
 
 \setbeamertemplate{footline}[frame number]
 
-\begin{document}
 \title[Crisis]
 {C2062 -- Anorganická chemie II}
 
 \subtitle{Skandium, yttrium, lanthanoidy a aktinoidy}
 \author{Zdeněk Moravec, hugo@chemi.muni.cz \\ \adjincludegraphics[height=60mm]{img/IUPAC_PSP.jpg}}
 \date{}
+
+\begin{document}
 
 \begin{frame}
 	\titlepage
@@ -65,7 +62,7 @@
 	 T$_v$ [$^\circ$C] & 1541 & 1526 & 920 & 1227 \\\hline
 	 T$_t$ [$^\circ$C] & 2836 & 2930 & 3464 & 3200 \\\hline
 	 Objev & 1879 & 1794 & 1838 & 1899 \\\hline
-	 & stříbrnobílý & stříbrnobílý & stříbrnobílý & stříbrnobílý \\
+	 & stříbrnobílý\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:Mscandium-3.jpg}{Commons}} & stříbrnobílý\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:Piece_of_Yttrium.jpg}{Jan Anskeit/Commons}} & stříbrnobílý\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:Lanthanum-2.jpg}{Jurii/Commons}} & stříbrnobílý\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:Actinium_sample_(31481701837).png}{Oak Ridge National Laboratory/Commons}} \\
 	 & \begin{minipage}{.2\textwidth}
 	 	\adjincludegraphics[width=\linewidth]{img/Mscandium-3.jpg}
 	 \end{minipage}
@@ -96,7 +93,7 @@
 		\item Všechny aktinoidy jsou nestabilní prvky, nemají žádný stabilní izotop.
 	\end{itemize}
 	\vfill
-}
+	}
 
 \section{Výskyt a získávání prvků}
 \frame{
@@ -115,7 +112,7 @@
 		Ce & 66 & 0 & Tb & 1 & 2 \\\hline
 		Pr & 9 & 1 & Dy & 4 & 5 \\\hline
 		Nd & 40 & 0 & Ho & 1 & 4 \\\hline
-		Pm & \multicolumn{2}{l|}{4,5.10$^{-20}$} & Er & 3 & 5 \\\hline
+		Pm & \multicolumn{2}{c|}{stopová množství} & Er & 3 & 5 \\\hline
 		Sm & 7 & 0 & Tm & 0 & 5 \\\hline
 		Eu & 2 & 1 & Yb & 3 & 1 \\\hline
 		Gd & 6 & 1 & Lu & 0 & 8 \\\hline
@@ -131,21 +128,21 @@
 \frame{
 	\frametitle{}
 	\vfill
-	\begin{itemize}
-		\item Roční produkce je okolo 20 tun, převážně oxidu skanditého. Poptávka je ale vyšší.
-		\item Hlavním zdrojem jsou odpady vzniklé při zpracování uranových rud, příp. minerál \textit{thortveitit} (\ce{(Sc,Y)2Si2O7}).\footnote[frame]{\href{http://www.minsocam.org/ammin/AM73/AM73_601.pdf}{A re-examination of thortveitite}}
-	\end{itemize}
+	\textbf{Skandium}
 	\begin{columns}
 	\begin{column}{0.7\textwidth}
 		\begin{itemize}
+			\item Roční produkce je okolo 20 tun, převážně oxidu skanditého. Poptávka je ale vyšší.
+			\item Hlavním zdrojem jsou odpady vzniklé při zpracování uranových rud, příp. minerál \textit{thortveitit} (\ce{(Sc,Y)2Si2O7}).\footnote[frame]{\href{http://www.minsocam.org/ammin/AM73/AM73_601.pdf}{A re-examination of thortveitite}}
 			\item Poprvé byl nalezen roku 1903, pojmenován byl roku 1911 po norském inženýrovi G.O. Olsenu Thortveitovi.\footnote[frame]{\href{http://webmineral.com/data/Thortveitite.shtml}{Thortveitite Mineral Data}}
-			\item Na obrázku je velký krystal thortveititu nalezený v Norsku.
+			\item V roce 2004 byl nalezen průhledný exemplář v kvalitě odpovídající drahokamům.\footnote[frame]{\href{https://doi.org/10.15506/JoG.2008.31.1.1}{Thortveitite - a new gemstone}}
 		\end{itemize}
 	\end{column}
 	\begin{column}{0.3\textwidth}
-		\begin{center}
+		\begin{figure}
 			\adjincludegraphics[width=\textwidth]{img/Thortveitite.jpg}
-		\end{center}
+			\caption*{Krystal thortveititu nalezený v Norsku.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:Thortveitite-ea14a.jpg}{Robert M. Lavinsky/Commons}}}
+		\end{figure}
 	\end{column}
 	\end{columns}
 	\vfill
@@ -155,12 +152,13 @@
 \frame{
 	\frametitle{}
 	\vfill
+	\textbf{Yttrium, lanthan}
 	\begin{itemize}
 		\item Oba prvky se získávají z nerostů.
 		\item Dříve se produkty loužení minerálů v kyselině chlorovodíkové, sírové nebo hydroxidu sodném čistily frakční krystalizací. Tu ale bylo nutné mnohokrát opakovat.
 		\item Dnes se využívají iontoměniče a speciální extrakční metody.
 		\item Jednou z možností přípravy kovového yttria z oxidických rud je rozpuštění oxidu v kyselině sírové a následná frakcionace pomocí ionexové chromatografie.
-		\item Přídavkem kyseliny šťavelové lze získat sraženinu šťavelanu yttritého, který se zahříván rozkládá na oxid.
+		\item Přídavkem kyseliny šťavelové lze získat sraženinu šťavelanu yttritého, který se zahříváním rozkládá na oxid.
 		\item Vzniklý oxid můžeme pomocí kyseliny fluorovodíkové převést na fluorid.
 		\item \ce{Y2O3 + 6 HF -> 2 YF3 + 3 H2O}
 	\end{itemize}
