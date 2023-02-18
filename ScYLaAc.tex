@@ -826,18 +826,20 @@
 			\item Magnetické pole až 28,2 T (1200 MHz)\footnote[frame]{\href{https://cen.acs.org/business/instrumentation/Bruker-installs-12-GHz-NMR/98/i19}{Bruker installs world's first 1.2 GHz}}
 		\end{itemize}
 	\end{itemize}
-	\begin{center}
-		\includegraphics[keepaspectratio,width=5cm]{img/Varian-_900MHz_-_21.2_Tesla.jpg}
-	\end{center}
+	\begin{figure}
+		\includegraphics[height=.5\textheight]{img/Varian-_900MHz_-_21.2_Tesla.jpg}
+		\caption*{NMR magnet 900 MHz.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:HWB-NMR_-_900MHz_-_21.2_Tesla.jpg}{MartinSaunders/Commons}}}
+	\end{figure}
 	\vfill
 }
 
 \frame{
 	\frametitle{}
 	\vfill
-	\begin{center}
-		\includegraphics[keepaspectratio,height=0.8\textheight]{img/Cutaway_of_NMR_magnet.jpg}
-	\end{center}
+	\begin{figure}
+		\includegraphics[keepaspectratio,height=0.7\textheight]{img/Cutaway_of_NMR_magnet.jpg}
+		\caption*{Řez NMR magnetem.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:Cutaway_of_NMR_magnet.jpg}{Z22/Commons}}}
+	\end{figure}
 	\vfill
 }
 
@@ -863,14 +865,26 @@
 	\frametitle{}
 	\vfill
 	\begin{itemize}
-		\item MRI - Magnetic Resonance Imaging
+		\item \textit{MRI} - Magnetic Resonance Imaging
 		\item Technika využívaná ke zobrazení vnitřních orgánů.
-		\item Na rozdíl od NMR neměříme posun, ale rozdílné relaxační časy vodíkových jader v organismu.
+		\item Na rozdíl od NMR neměříme chemický posun, ale rozdílné relaxační časy vodíkových jader v organismu.
 	\end{itemize}
-	\begin{center}
-		\adjincludegraphics[height=4cm]{img/MRI-Philips.JPG}
-		\adjincludegraphics[height=4cm]{img/MRI_knee_abdonrmal.jpg}
-	\end{center}
+
+	\begin{columns}
+		\begin{column}{.5\textwidth}
+			\begin{figure}
+				\adjincludegraphics[height=4cm]{img/MRI-Philips.JPG}
+				\caption*{MRI přístroj.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:MRI-Philips.JPG}{Jan Ainali/Commons}}}
+			\end{figure}
+		\end{column}
+		\begin{column}{.5\textwidth}
+			\begin{figure}
+				\adjincludegraphics[height=4cm]{img/MRI_knee_abdonrmal.jpg}
+				\caption*{Snímek z MRI.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:MRI_knee_abdonrmal.jpg}{Ptrump16/Commons}}}
+			\end{figure}
+		\end{column}
+	\end{columns}
+
 	\vfill
 }
 
@@ -882,9 +896,23 @@
 		\item Využívá principu MAGnetické LEVitace, které je dosahováno pomocí supravodivých cívek.
 		\item Příkladem může být pozemní dráha v Šanghaji o délce asi 40~km. Vlaky na ní dosahují rychlosti až 431~km/h.
 	\end{itemize}
+	\begin{columns}
+		\begin{column}{.5\textwidth}
+			\begin{figure}
+				\adjincludegraphics[height=35mm]{img/Meissner_effect.jpg}
+				\caption*{Levitace magnetu nad supravodičem.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:Meissner_effect_p1390048.jpg}{Mai-Linh Doan/Commons}}}
+			\end{figure}
+		\end{column}
+		\begin{column}{.5\textwidth}
+			\begin{figure}
+				\adjincludegraphics[height=35mm]{img/Maglev_june2005.jpg}
+				\caption*{Maglev.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:Maglev_june2005.jpg}{JakeLM/Commons}}}
+			\end{figure}
+		\end{column}
+	\end{columns}
 	\begin{center}
-		\adjincludegraphics[height=35mm]{img/Meissner_effect.jpg}
-		\adjincludegraphics[height=35mm]{img/Maglev_june2005.jpg}
+
+
 	\end{center}
 	\vfill
 }
@@ -917,36 +945,59 @@
 \frame{
 	\frametitle{}
 	\vfill
-	\begin{itemize}
-		\item \textit{Jaderná fůze}
-		\item Místo štěpení těžkých jader, dochází ke slučování lehkých jader.
-		\item Nejvýhodnější je využití izotopů vodíku, které se slučují za vzniku jader helia a uvolnění energie.
-		\begin{itemize}
-			\item \ce{^2_1H + ^3_1H -> ^4_2He + ^1_0n}
-		\end{itemize}
-		\item Aby ke slučování mohlo dojít, je nutné v místě reakce vytvořit plasma o teplotě 100 miliónů $^\circ$C.
-		\item Gram směsi deuteria s tritiem by měl být schopen generovat výkon 500 MW po dobu asi jedné minuty.
-	\end{itemize}
-	\begin{center}
-		\adjincludegraphics[height=40mm]{img/Deuterium-tritium_fusion_-_comma.png}
-	\end{center}
+	\begin{columns}
+		\begin{column}{.75\textwidth}
+			\begin{itemize}
+				\item \textit{Jaderná fůze}
+				\item Místo štěpení těžkých jader, dochází ke slučování lehkých jader.
+				\item Nejvýhodnější je využití izotopů vodíku, které se slučují za vzniku jader helia a uvolnění energie.
+				\begin{itemize}
+					\item \ce{^2_1H + ^3_1H -> ^4_2He + ^1_0n}
+				\end{itemize}
+				\item Aby ke slučování mohlo dojít, je nutné v místě reakce vytvořit plasma o teplotě 100 miliónů $^\circ$C.\footnote[frame]{\href{https://www.aldebaran.cz/zvuky/blyskani/docs/10.html}{Zapálíme Slunce na Zemi?}}
+				\item Gram směsi deuteria s tritiem by měl být schopen generovat výkon 500 MW po dobu asi jedné minuty.
+			\end{itemize}
+		\end{column}
+		\begin{column}{.4\textwidth}
+			\begin{figure}
+				\adjincludegraphics[height=40mm]{img/Deuterium-tritium_fusion_-_comma.png}
+				\caption*{Jaderná fúze deuteria s tritiem.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:Deuterium-tritium_fusion_-_comma.svg}{Wykis/Commons}}}
+			\end{figure}
+		\end{column}
+	\end{columns}
 	\vfill
 }
 
 \frame{
 	\frametitle{}
 	\vfill
-	\begin{itemize}
-		\item \textit{ITER} -- International Thermonuclear Experimental Reactor.\footnote[frame]{\href{https://www.iter.org/}{ITER}}
-		\item Stavba probíhá na francouzském území, začala v roce 2007.
-		\item Mezinárodní projekt, jehož cílem je konstrukce reaktoru, který bude schopen vyrábět elektřinu pomocí jaderné fúze.
-		\item Aby bylo možné vodíkové plazma udržet uvnitř reaktoru je nutné využít supravodivé magnety, které jsou schopné generovat dostatečně silné magnetické pole. To bude zabraňovat kontaktu plazmatu s povrchem reaktoru.
-		\item Očekávaný termín spuštění je v roce 2025, plného výkonu by měl dosáhnout o deset let později.
-	\end{itemize}
-	\begin{center}
-		\adjincludegraphics[height=30mm]{img/ITER_site_2018_aerial_view_(41809720041).jpg}
-		\adjincludegraphics[height=30mm]{img/U.S._Department_of_Energy.jpg}
-	\end{center}
+	\begin{columns}
+		\begin{column}{.7\textwidth}
+			\begin{itemize}
+				\item \textit{ITER} -- International Thermonuclear Experimental Reactor.\footnote[frame]{\href{https://www.iter.org/}{ITER}}
+				\item Stavba probíhá na francouzském území, začala v roce 2007.
+				\item Mezinárodní projekt, jehož cílem je konstrukce reaktoru, který bude schopen vyrábět elektřinu pomocí jaderné fúze.
+				\item Aby bylo možné vodíkové plazma udržet uvnitř reaktoru je nutné využít supravodivé magnety, které jsou schopné generovat dostatečně silné magnetické pole. To bude zabraňovat kontaktu plazmatu s povrchem reaktoru.
+				\item Očekávaný termín spuštění je v roce 2025, plného výkonu by měl dosáhnout o deset let později.
+			\end{itemize}
+		\end{column}
+		\begin{column}{.35\textwidth}
+			\begin{figure}
+				\adjincludegraphics[width=\textwidth]{img/U.S._Department_of_Energy.jpg}
+				\caption*{Model reaktoru ITERu.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:U.S._Department_of_Energy_-_Science_-_425_003_001_(9786811206).jpg}{U.S. Department of Energy/Commons}}}
+			\end{figure}
+		\end{column}
+	\end{columns}
+	\vfill
+}
+
+\frame{
+	\frametitle{}
+	\vfill
+	\begin{figure}
+		\adjincludegraphics[height=.7\textheight]{img/ITER_site_2018_aerial_view_(41809720041).jpg}
+		\caption*{Pohled na staveniště ITERu v roce 2018.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:ITER_site_2018_aerial_view_(41809720041).jpg}{ITER Site/Commons}}}
+	\end{figure}
 	\vfill
 }
 
@@ -964,7 +1015,10 @@
 			\vfill
 		\end{column}
 		\begin{column}{0.5\textwidth}
-			\includegraphics[keepaspectratio,width=0.8\textwidth]{img/Windmills_D1-D4.jpg}
+			\begin{figure}
+				\includegraphics[width=0.7\textwidth]{img/Windmills_D1-D4.jpg}
+				\caption*{Větrné elektrárny v Belgii.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:Windmills_D1-D4_(Thornton_Bank).jpg}{Hans Hillewaert/Commons}}}
+			\end{figure}
 		\end{column}
 	\end{columns}
 }
